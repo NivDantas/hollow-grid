@@ -20,6 +20,10 @@ img{
   max-width: 100%;
   object-fit: cover;
 }
+
+p{
+  font-family: "Noto Serif", serif;
+}
 .header-grid{
   display: grid;
   color: white;
@@ -46,21 +50,132 @@ img{
   margin: 1.25rem 0 0.625rem 1.25rem;
 }
 
+.main-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .hollow-icons{
   display: grid;
+  position: relative;
   grid-template-columns: repeat(5, 1fr);
   overflow-x: scroll;
   padding: 20px;
-  gap: 40px;
+  gap: 30px;
 }
 
+.hollow-icons::after{
+  content: "→";
+  position: absolute;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  animation: 0.5s ease-in 0s infinite alternate none running seta;
+}
 .hollow-icons div{
-  width: 120px;
-  height: 120px;
+  width: 105px;
+  height: 105px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
  background-color: #fff; 
  border-radius: 4px;
 }
 .hollow-icons img{
-  padding: 20px;
+  padding: 1rem;
+}
+.hollow-title{
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  margin: 1.25rem 1.25rem;
+  letter-spacing: 1px;
+}
+
+.hollow-title p{
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hollow-features{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  margin: 0 1.25rem; 
+}
+
+.hollow-features div{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  justify-content: center;
+  background: linear-gradient(135deg, #000, #262626) ;
+  color: #cecdcd;
+  width: 100px;
+  height: 100px; 
+}
+
+.hollow-content{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hollow-content > p{
+  margin: 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.hollow-content > img{
+  justify-self: center;
+  width: calc(100% - 2.5rem);
+  border-radius: 4px;
+}
+
+.mini-p{
+  width: 50%;
+  margin: 1.25rem;
+  color: #262626;
+  font-size: 0.8rem !important;
+  line-height: 1.2rem;
+}
+
+.detail-blockquote{
+  background: linear-gradient(135deg, #000, #262626);
+  color: #fff;
+  margin: 1.25rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.grimm-grid{
+  display: grid;
+  margin: 1.25rem;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grimm-grid img{
+  border-radius: 4px;
+filter: grayscale(0.9);
+}
+
+.footer{
+  background-color: #242424;
+  padding: 1.25rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+@keyframes seta{
+0%{
+  right: 30px;
+}
+100%{
+  right: 20px;
+}
 }
