@@ -334,7 +334,7 @@ justify-self: center;
     font-size: 3.2rem;
   }
   .estrutura{
-    grid-template-columns: minmax(180px, 1fr) 3fr 1fr;
+    grid-template-columns: minmax(180px, 320px) 3fr 1fr;
   }
   .hollow-icons{
     margin: 1.25rem;
