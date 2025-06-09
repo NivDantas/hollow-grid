@@ -16,4 +16,5 @@ This project is a static webpage inspired by the Hollow Knight game, specificall
 
 ## Images
   - Images used are from Hollow Knight official arts. Some icons were created by an artist friend who designed them exclusively for this site
+
 ![Hollow Knight](./imgs/hollow-4.jpg)
